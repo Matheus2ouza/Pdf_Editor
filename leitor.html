@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Parser</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1>Adicione um PDF</h1>
+    <input type="file" class="file-input" />
+    <button class="create-list">Gerar Lista</button>
+    <button id="download-pdf">Baixar PDF</button>
+    <div id="content-container"></div> <!-- Contêiner para divs dinâmicas -->
+    <script src="/src/pdfProcessor.js"></script>
+    <script src="/src/pdfCreator.js"></script>
+</body>
+</html>

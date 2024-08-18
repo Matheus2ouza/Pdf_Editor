@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    background: linear-gradient(to right, #292929, #594590);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  .hidden {
+    display: none;
+  }
+  .file-content, .incomplete-content {
+    margin-bottom: 20px;
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .file-input {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .file-content, .incomplete-content {
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .file-content ul, .incomplete-content ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+    list-style: none;
+  }
+  
+  .file-content {
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-bottom: 40px; /* Espaço entre o input e a lista de inscrições */
+  }
+  
+  .incomplete-content {
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 40px; /* Espaço acima da lista de itens incompletos */
+  }
+  
+  button, .file-input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #594590;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.8s;
+  }
+  
+  button:hover, .file-input:hover {
+    background-color: #3e2e78;
+  }
+  
+#progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.8s;
+}
